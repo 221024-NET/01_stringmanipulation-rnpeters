@@ -18,7 +18,26 @@ namespace StringManipulationChallenge
             //implement the required code here and within the methods below.
             //
             //
+            
+            Console.WriteLine("Please enter your message and press enter");
+            userInputString = Console.ReadLine();
+            System.Console.WriteLine("Please enter a number LESS THAN the length of your string and press enter");
+            elementNum = int.Parse(Console.ReadLine());
+            StringToUpper(userInputString);
+            StringToLower(userInputString);
+            StringTrim(userInputString);
+            StringSubstring(userInputString,elementNum);
 
+            System.Console.WriteLine("For which character should I search in your original message?");
+            //char1 = Console.ReadLine()[0];
+            char1 = char.Parse(Console.ReadLine());
+            Console.WriteLine(SearchChar(userInputString, char1));
+
+            Console.WriteLine("What is your first name");
+            fName = Console.ReadLine();
+            Console.WriteLine("What is your last name");
+            lName = Console.ReadLine();
+            Console.WriteLine(ConcatNames(fName,lName));
 
         }
 
